@@ -3,23 +3,24 @@ abstract: 'remove duplicated item from array'
 author:
   - 'Yasuhiro Matsumoto <mattn.jp@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  Module::Build::Tiny: 0
+dynamic_config: 0
+generated_by: 'Minilla/v0.0.49, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Data-Deduper
-no_index:
-  directory:
-    - inc
-    - t
-    - xt
+provides:
+  Data::Deduper:
+    file: lib/Data/Deduper.pm
+    version: 0.03
 requires:
   Filter::Util::Call: 0
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.02
+  bugtracker: https://github.com/mattn/p5-Data-Deduper/issues
+  homepage: https://github.com/mattn/p5-Data-Deduper
+  repository: https://github.com/mattn/p5-Data-Deduper
+version: 0.03
